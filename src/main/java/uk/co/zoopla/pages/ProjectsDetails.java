@@ -1,5 +1,6 @@
 package uk.co.zoopla.pages;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -10,6 +11,11 @@ import uk.co.zoopla.TestBase.Testbase;
 
 public class ProjectsDetails extends Testbase{
 
+	
+	public ProjectsDetails() throws IOException{
+		
+	}
+	
 	
 	
 	public void PropList() {

@@ -18,10 +18,10 @@ public class Testbase {
 	
 	
 	
-	public void Testvase() throws IOException {
+	public Testbase() throws IOException {
 		
 		pro = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/uk.co.zoopla/src/main/java/uk/co"+"zoopla/config/config.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("Users/a121yn0n/Documents/workspace/uk.co.zoopla/src/main/java/uk/co/zoopla/config/config.properties"));
 		pro.load(fis);
 		}
 

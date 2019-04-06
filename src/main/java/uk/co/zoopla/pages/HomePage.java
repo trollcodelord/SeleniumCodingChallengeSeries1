@@ -1,5 +1,6 @@
 package uk.co.zoopla.pages;
 
+import java.io.IOException;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,7 +29,7 @@ public class HomePage extends Testbase{
 	
 	
 	// Object Initialization
-	public HomePage() {
+	public HomePage() throws IOException {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -51,7 +52,7 @@ public class HomePage extends Testbase{
 		}
 	}
 	
-	public PropertiesPages SearchBtn() {
+	public PropertiesPages SearchBtn() throws IOException {
 		
 		searchButton.click();
 		

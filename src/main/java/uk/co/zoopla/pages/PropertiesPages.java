@@ -1,5 +1,6 @@
 package uk.co.zoopla.pages;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -30,12 +31,12 @@ public class PropertiesPages extends Testbase{
 	
 	
 	
-	public PropertiesPages() {
+	public PropertiesPages() throws IOException {
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	public PropertiesViewPage DisplayAmount() {
+	public PropertiesViewPage DisplayAmount() throws IOException {
 		
 		List<WebElement> price = new ArrayList<WebElement>(driver.findElements(By.xpath("//ul[@class=\\\"listing-results clearfix js-gtm-list\\\"]/li/div/div[2]/div[1]/following-sibling::a[contains(text(),'£')]")));
 		
@@ -53,6 +54,9 @@ public class PropertiesPages extends Testbase{
 		
 		FifthOption.click();
 	}
+	
+	
+	
 	public String getPageTitle() {
 		 String a = driver.getTitle();
 		 return a;
